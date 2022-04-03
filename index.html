@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      /* grid-template-columns: 20% 50% 30%; */
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-rows: repeat(2, minmax(200px, auto)); */
+      grid-auto-rows: minmax(200px, auto);
+      column-gap: 10px;
+      row-gap: 20px;
+    }
+    .content div {
+      background-color: #123456;
+      text-align: center;
+    }
+    .content div:nth-child(even) {
+      background-color: orange
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div>1</div>
+    <div>2</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quis minus, veniam dicta tenetur corporis fuga odio repudiandae quidem, explicabo molestias sunt voluptas earum, quos quasi sit quibusdam nesciunt asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta, dolore sit unde reiciendis porro suscipit in fuga qui officiis ullam obcaecati mollitia voluptates similique optio quo voluptatum molestias voluptatibus iure magnam minus aspernatur laboriosam dicta? Fuga officia quibusdam recusandae aspernatur aut nam quod cum dolorem ipsam! Nostrum ducimus, laborum laboriosam nemo excepturi voluptatum pariatur sunt iure illum a molestiae repellendus possimus ad quod, assumenda saepe optio accusamus quos at, est placeat magnam? Laudantium quasi voluptates dignissimos vitae, modi molestiae qui architecto sunt pariatur voluptatibus unde magnam obcaecati fuga minus, doloremque commodi error? Consequatur quo a obcaecati eos, soluta rerum.</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+  </div>
+</body>
+</html>
